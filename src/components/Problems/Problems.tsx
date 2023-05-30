@@ -1,3 +1,5 @@
+import ProblemsTable from "./ProblemsTable";
+
 type ProblemsProps = {};
 
 const Problems: React.FC<ProblemsProps> = () => {
@@ -6,6 +8,8 @@ const Problems: React.FC<ProblemsProps> = () => {
       <h1 className="text-[#363E4A] font-semibold text-3xl">
         &#34; QUALITY OVER QUANTITY ” 👇
       </h1>
+
+      <ProblemsTable />
     </section>
   );
 };

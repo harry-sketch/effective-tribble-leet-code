@@ -2,11 +2,9 @@ import { cw } from "@/utils/helpers";
 import Image from "next/image";
 import Button from "../common/Button";
 
-type TopbarProps = {
-  className?: string;
-};
+type TopbarProps = {};
 
-const Topbar: React.FC<TopbarProps> = ({ className }) => (
+const Topbar: React.FC<TopbarProps> = ({}) => (
   <nav
     className={cw(
       "bg-[#282828] top-0 sticky w-full  flex items-center justify-between md:px-[5%] px-4 py-3"

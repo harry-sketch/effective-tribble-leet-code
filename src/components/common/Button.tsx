@@ -16,9 +16,9 @@ const Button: React.FC<ButtonProps> = ({
   onClick,
 }) => {
   const sizeMap = {
-    sm: "px-2 py-1.5 rounded-lg",
-    md: "px-3 py-1.5 rounded-lg",
-    lg: "px-4 py-2 rounded-xl",
+    sm: "px-2 rounded-lg text-sm",
+    md: "px-3 rounded-lg text-sm",
+    lg: "px-4 rounded-xl text-base",
   };
 
   const handleClick = () => {
@@ -32,7 +32,7 @@ const Button: React.FC<ButtonProps> = ({
       className={cw(
         className,
         sizeMap[size],
-        "border-none outline-none text-slate-50 font-medium transition-all duration-300 ease-linear"
+        "border-none outline-none  font-medium transition-all duration-300 ease-linear h-8 flex items-center justify-center"
       )}
     >
       {text}
